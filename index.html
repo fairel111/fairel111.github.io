@@ -9,14 +9,28 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: #f0f4f8;
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
       color: #333;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
     header {
       background-color: #00695c;
       color: white;
-      padding: 20px 40px;
+      padding: 30px 40px;
       text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+      font-style: italic;
     }
     nav ul {
       list-style: none;
@@ -34,6 +48,7 @@
       text-decoration: none;
       padding: 15px;
       display: block;
+      transition: background 0.3s;
     }
     nav ul li a:hover {
       background-color: #00796b;
@@ -50,15 +65,23 @@
     }
     h2 {
       color: #00695c;
+      margin-bottom: 10px;
     }
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-top: 10px;
+    h3 {
+      color: #00796b;
     }
     ul {
       padding-left: 20px;
+    }
+    li::marker {
+      color: #00695c;
+    }
+    .highlight {
+      background-color: #e0f2f1;
+      padding: 5px 10px;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 5px 0;
     }
     footer {
       background-color: #00695c;
@@ -72,8 +95,8 @@
 <body>
 
   <header>
-    <h1>SMK Islam Malahayati</h1>
-    <p>Unggul dalam Teknologi, Akuntansi, dan Layanan Bisnis</p>
+    <h1>🌟 SMK Islam Malahayati 🌟</h1>
+    <p>Tempatnya Generasi Hebat Berkembang dengan Ilmu dan Akhlak</p>
   </header>
 
   <nav>
@@ -82,88 +105,83 @@
       <li><a href="#visi">Visi & Misi</a></li>
       <li><a href="#jurusan">Jurusan</a></li>
       <li><a href="#eskul">Ekstrakurikuler</a></li>
-      <li><a href="#galeri">Galeri</a></li>
       <li><a href="#berita">Berita</a></li>
       <li><a href="#kontak">Kontak</a></li>
     </ul>
   </nav>
 
   <section id="profil">
-    <h2>Profil Sekolah</h2>
-    <p>SMK Islam Malahayati adalah sekolah menengah kejuruan yang berkomitmen membentuk generasi Islami yang profesional di bidang Teknik Jaringan Komputer dan Telekomunikasi (TJKT), Akuntansi dan Keuangan Lembaga (AKL), serta Manajemen Perkantoran dan Layanan Bisnis (MPLB).</p>
+    <h2>📘 Profil Sekolah</h2>
+    <p>SMK Islam Malahayati adalah <span class="highlight">sekolah kejuruan berbasis Islam</span> yang berfokus pada pembentukan karakter, kompetensi, dan kreativitas siswa. Kami hadir untuk mencetak lulusan yang <strong>profesional, berakhlak, dan siap kerja</strong>.</p>
   </section>
 
   <section id="visi">
-    <h2>Visi & Misi</h2>
+    <h2>🎯 Visi & Misi</h2>
     <h3>Visi</h3>
-    <p>Menjadi SMK Islam unggulan yang menghasilkan lulusan berakhlak mulia, kompeten, dan siap bersaing di dunia kerja serta berwirausaha.</p>
+    <p><em>Menjadi SMK Islam unggulan yang menghasilkan lulusan berakhlak mulia, kompeten, dan siap bersaing di dunia kerja serta berwirausaha.</em></p>
     <h3>Misi</h3>
     <ul>
-      <li>Menanamkan nilai-nilai keislaman dalam setiap aspek pembelajaran.</li>
-      <li>Meningkatkan kualitas pendidikan berbasis teknologi dan bisnis.</li>
-      <li>Menyiapkan peserta didik menjadi tenaga kerja profesional dan mandiri.</li>
-      <li>Menjalin kemitraan dengan dunia industri dan perguruan tinggi.</li>
+      <li>🌱 Menanamkan nilai-nilai keislaman dalam setiap aspek pembelajaran.</li>
+      <li>💡 Meningkatkan kualitas pendidikan berbasis teknologi dan bisnis.</li>
+      <li>🚀 Menyiapkan peserta didik menjadi tenaga kerja profesional dan mandiri.</li>
+      <li>🤝 Menjalin kemitraan dengan dunia industri dan perguruan tinggi.</li>
     </ul>
   </section>
 
   <section id="jurusan">
-    <h2>Jurusan & Keunggulan</h2>
-    <h3>TJKT - Teknik Jaringan Komputer dan Telekomunikasi</h3>
+    <h2>🏫 Jurusan & Keunggulan</h2>
+
+    <h3>💻 TJKT - Teknik Jaringan Komputer dan Telekomunikasi</h3>
     <ul>
-      <li>Praktik langsung dengan perangkat jaringan dan server.</li>
-      <li>Belajar instalasi, konfigurasi, dan keamanan jaringan.</li>
-      <li>Siap kerja di bidang IT support, network engineer, dan teknisi jaringan.</li>
+      <li>🔧 Praktik langsung dengan perangkat jaringan dan server.</li>
+      <li>🛡️ Belajar instalasi, konfigurasi, dan keamanan jaringan.</li>
+      <li>💼 Siap kerja di bidang IT support, network engineer, dan teknisi jaringan.</li>
     </ul>
 
-    <h3>AKL - Akuntansi dan Keuangan Lembaga</h3>
+    <h3>📊 AKL - Akuntansi dan Keuangan Lembaga</h3>
     <ul>
-      <li>Belajar pembukuan, laporan keuangan, dan software akuntansi.</li>
-      <li>Simulasi kerja di kantor akuntan dan lembaga keuangan.</li>
-      <li>Siap kerja sebagai staf akuntansi, kasir, dan auditor junior.</li>
+      <li>🧮 Belajar pembukuan, laporan keuangan, dan software akuntansi.</li>
+      <li>🏦 Simulasi kerja di kantor akuntan dan lembaga keuangan.</li>
+      <li>📈 Siap kerja sebagai staf akuntansi, kasir, dan auditor junior.</li>
     </ul>
 
-    <h3>MPLB - Manajemen Perkantoran dan Layanan Bisnis</h3>
+    <h3>📁 MPLB - Manajemen Perkantoran dan Layanan Bisnis</h3>
     <ul>
-      <li>Belajar administrasi perkantoran, pelayanan publik, dan komunikasi bisnis.</li>
-      <li>Simulasi kerja di kantor modern dan layanan pelanggan.</li>
-      <li>Siap kerja sebagai sekretaris, admin kantor, dan customer service.</li>
+      <li>📝 Belajar administrasi perkantoran, pelayanan publik, dan komunikasi bisnis.</li>
+      <li>🏢 Simulasi kerja di kantor modern dan layanan pelanggan.</li>
+      <li>📞 Siap kerja sebagai sekretaris, admin kantor, dan customer service.</li>
     </ul>
   </section>
 
   <section id="eskul">
-    <h2>Ekstrakurikuler</h2>
+    <h2>🎉 Ekstrakurikuler</h2>
+    <p>Di SMK Islam Malahayati, kamu bisa mengembangkan bakat dan minat lewat berbagai kegiatan seru:</p>
     <ul>
-      <li>Rohis (Rohani Islam)</li>
-      <li>Volly</li>
-      <li>IT Club</li>
-      <li>English Club</li>
-      <li>Futsal</li>
-      <li>Basket</li>
-      <li>Hadroh</li>
-      <li>Paskibra</li>
-      <li>Band Sekolah</li>
+      <li>🕌 Rohis (Rohani Islam)</li>
+      <li>🏐 Volly</li>
+      <li>🖥️ IT Club</li>
+      <li>🇬🇧 English Club</li>
+      <li>⚽ Futsal</li>
+      <li>🏀 Basket</li>
+      <li>🥁 Hadroh</li>
+      <li>🎖️ Paskibra</li>
+      <li>🎸 Band Sekolah</li>
     </ul>
   </section>
 
-  <section id="galeri">
-    <h2>Galeri Foto</h2>
-    <img src="IMG_20251006_123120.jpg" alt="Kegiatan Siswa">
-    <img src="IMG_20251006_123318.jpg" alt="Laboratorium TJKT">
-  </section>
-
   <section id="berita">
-    <h2>Berita Terbaru</h2>
+    <h2>📰 Berita Terbaru</h2>
     <article>
-      <h3>Juara Lomba Jaringan Nasional</h3>
-      <p>Tim TJKT SMK Islam Malahayati berhasil meraih juara 1 dalam kompetisi jaringan tingkat nasional yang diadakan oleh Kemendikbud.</p>
+      <h3>🏆 Juara Lomba Jaringan Nasional</h3>
+      <p>Tim TJKT SMK Islam Malahayati berhasil meraih juara 1 dalam kompetisi jaringan tingkat nasional yang diadakan oleh Kemendikbud. Prestasi ini membuktikan bahwa siswa kami mampu bersaing di level tertinggi!</p>
     </article>
   </section>
 
   <section id="kontak">
-    <h2>Kontak Kami</h2>
-    <p>Email: info@smkmalahayati.sch.id</p>
-    <p>Telepon: (021) 12345677</p>
-    <p>Alamat: Jl. Pendidikan No. 45, Ciracas, Jakarta Timur</p>
+    <h2>📞 Kontak Kami</h2>
+    <p>📧 Email: info@smkmalahayati.sch.id</p>
+    <p>📱 Telepon: (021) 12345678</p>
+    <p>📍 Alamat: Jl. Pendidikan No. 45, Ciracas, Jakarta Timur</p>
   </section>
 
   <footer>
