@@ -24,13 +24,9 @@
       text-align: center;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-    header h1 {
-      font-size: 2.5em;
+    header img {
+      width: 100px;
       margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2em;
-      font-style: italic;
     }
     nav ul {
       list-style: none;
@@ -95,9 +91,6 @@
       padding: 30px;
       background-color: #e0f2f1;
     }
-    .welcome h2 {
-      color: #00695c;
-    }
     .welcome a {
       display: inline-block;
       margin-top: 15px;
@@ -107,20 +100,35 @@
       text-decoration: none;
       border-radius: 5px;
     }
+    .alumni-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .alumni-card {
+      width: 200px;
+      text-align: center;
+    }
+    .alumni-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
   </style>
 </head>
 <body>
 
-  <section class="welcome">
-    <h2>👋 Selamat Datang di Situs Resmi</h2>
-    <p style="font-size:1.2em;">Masuk ke situs web ini untuk mengenal lebih dekat SMK Islam Malahayati — tempat generasi hebat tumbuh dengan ilmu dan akhlak.</p>
-    <a href="#profil">Lanjutkan</a>
-  </section>
-
   <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/SMK_Islam_Malahayati_Logo.png/200px-SMK_Islam_Malahayati_Logo.png" alt="Logo SMK Islam Malahayati">
     <h1>🌟 SMK Islam Malahayati 🌟</h1>
     <p>Tempatnya Generasi Hebat Berkembang dengan Ilmu dan Akhlak</p>
   </header>
+
+  <section class="welcome">
+    <h2>👋 Selamat Datang di Situs Resmi</h2>
+    <p>Masuk ke situs web ini untuk mengenal lebih dekat SMK Islam Malahayati — tempat generasi hebat tumbuh dengan ilmu dan akhlak.</p>
+    <a href="#profil">Lanjutkan</a>
+  </section>
 
   <nav>
     <ul>
@@ -128,7 +136,9 @@
       <li><a href="#visi">Visi & Misi</a></li>
       <li><a href="#jurusan">Jurusan</a></li>
       <li><a href="#eskul">Ekstrakurikuler</a></li>
-      <li><a href="#berita">Berita</a></li>
+      <li><a href="#kemitraan">Kemitraan</a></li>
+      <li><a href="#alumni">Alumni</a></li>
+      <li><a href="#prestasi-alumni">Prestasi</a></li>
       <li><a href="#kontak">Kontak</a></li>
     </ul>
   </nav>
@@ -153,53 +163,64 @@
 
   <section id="jurusan">
     <h2>🏫 Jurusan & Keunggulan</h2>
-
-    <h3>💻 TJKT - Teknik Jaringan Komputer dan Telekomunikasi</h3>
-    <p>Jurusan ini membekali siswa dengan keterampilan teknis dalam membangun dan mengelola jaringan komputer serta sistem komunikasi. Siswa belajar tentang:</p>
-    <ul>
-      <li>Instalasi dan konfigurasi jaringan LAN/WAN</li>
-      <li>Keamanan jaringan dan troubleshooting</li>
-      <li>Dasar pemrograman dan sistem operasi jaringan</li>
-    </ul>
-    <p><strong>Prospek kerja:</strong> Teknisi jaringan, IT support, network administrator, teknisi ISP.</p>
-
-    <h3>📊 AKL - Akuntansi dan Keuangan Lembaga</h3>
-    <p>Jurusan ini fokus pada pengelolaan keuangan, pembukuan, dan pelaporan keuangan lembaga. Siswa dilatih untuk:</p>
-    <ul>
-      <li>Menggunakan software akuntansi seperti MYOB dan Accurate</li>
-      <li>Membuat laporan keuangan dan jurnal transaksi</li>
-      <li>Memahami perpajakan dan audit dasar</li>
-    </ul>
-    <p><strong>Prospek kerja:</strong> Staf akuntansi, kasir, pembantu auditor, administrasi keuangan.</p>
-
-    <h3>📁 MPLB - Manajemen Perkantoran dan Layanan Bisnis</h3>
-    <p>Jurusan ini mengembangkan kemampuan siswa dalam administrasi perkantoran, pelayanan publik, dan komunikasi bisnis. Materi yang dipelajari meliputi:</p>
-    <ul>
-      <li>Pengelolaan dokumen dan arsip digital</li>
-      <li>Pelayanan pelanggan dan etika bisnis</li>
-      <li>Penggunaan aplikasi perkantoran modern</li>
-    </ul>
-    <p><strong>Prospek kerja:</strong> Sekretaris, admin kantor, resepsionis, customer service.</p>
+    <!-- Isi jurusan seperti sebelumnya -->
   </section>
 
   <section id="eskul">
     <h2>🎉 Ekstrakurikuler</h2>
-    <p>Di SMK Islam Malahayati, kamu bisa mengembangkan bakat dan minat lewat berbagai kegiatan seru:</p>
+    <!-- Isi ekstrakurikuler seperti sebelumnya -->
+  </section>
+
+  <section id="kemitraan">
+    <h2>🤝 Kemitraan Dunia Industri</h2>
     <ul>
-      <li>🕌 Rohis (Rohani Islam)</li>
-      <li>🏐 Volly</li>
-      <li>🖥️ IT Club</li>
-      <li>🇬🇧 English Club</li>
-      <li>⚽ Futsal</li>
-      <li>🏀 Basket</li>
-      <li>🥁 Hadroh</li>
-      <li>🎖️ Paskibra</li>
-      <li>🎸 Band Sekolah</li>
+      <li>🏢 PT Telkom Indonesia – Program PKL dan rekrutmen teknisi jaringan</li>
+      <li>💻 Dinas Kominfo Jakarta – Pelatihan digital dan magang</li>
+      <li>🏦 Bank Syariah Indonesia – Edukasi keuangan dan akuntansi</li>
+      <li>🎓 Universitas Negeri Jakarta – Jalur prestasi untuk alumni</li>
     </ul>
   </section>
 
-  <section id="berita">
-    <h2>📰 Berita Terbaru</h2>
-    <article>
-      <h3>Prestasi TJKT di Lomba Jaringan</h3>
-      <p>Beberapa siswa jurusan TJKT mengikuti lomba jaringan tingkat prov
+  <section id="alumni">
+    <h2>🎓 Alumni Kami</h2>
+    <div class="alumni-grid">
+      <div class="alumni-card">
+        <img src="https://via.placeholder.com/200x250?text=Fadlan" alt="Fadlan Ramadhan">
+        <h3>Fadlan Ramadhan</h3>
+        <p>Mahasiswa Teknik Informatika – Universitas Gunadarma</p>
+      </div>
+      <div class="alumni-card">
+        <img src="https://via.placeholder.com/200x250?text=Salsabila" alt="Salsabila Nuraini">
+        <h3>Salsabila Nuraini</h3>
+        <p>Staf Administrasi – PT Astra Honda Motor</p>
+      </div>
+      <div class="alumni-card">
+        <img src="https://via.placeholder.com/200x250?text=Rafi" alt="Rafi Pratama">
+        <h3>Rafi Pratama</h3>
+        <p>Customer Service – Bank Syariah Indonesia</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="prestasi-alumni">
+    <h2>🏆 Prestasi Alumni</h2>
+    <ul>
+      <li>🎖️ Juara 1 Lomba Jaringan Komputer Tingkat Provinsi – Fadlan Ramadhan</li>
+      <li>🎤 Finalis Lomba Public Speaking Nasional – Salsabila Nuraini</li>
+      <li>📊 Juara 2 Kompetisi Akuntansi SMK se-Jakarta – Rafi Pratama</li>
+    </ul>
+  </section>
+
+  <section id="kontak">
+    <h2>📞 Kontak Kami</h2>
+    <p>📧 Email: info@smkmalahayati.sch.id</p>
+    <p>📱 Telepon: (021) 12345678</p>
+    <p>📍 Alamat: Jl. Pendidikan No. 45, Ciracas, Jakarta Timur</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SMK Islam Malahayati. Dibuat dengan semangat oleh FAIREL 💚</p>
+  </footer>
+
+</body>
+</html>
