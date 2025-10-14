@@ -114,6 +114,65 @@
       width: 100%;
       border-radius: 10px;
     }
+
+    /* Scrollable section styles */
+    .scrollable-wrapper {
+      position: relative;
+      margin: 40px 0;
+    }
+    .scrollable-sections {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 20px;
+      padding: 20px;
+      scroll-padding: 20px;
+      scroll-behavior: smooth;
+    }
+    .scrollable-sections section {
+      flex: 0 0 90%;
+      scroll-snap-align: start;
+      min-width: 300px;
+      transition: transform 0.3s ease;
+    }
+    .scroll-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #00695c;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 20px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .scroll-btn:hover {
+      background-color: #00796b;
+    }
+    .scroll-left {
+      left: 10px;
+    }
+    .scroll-right {
+      right: 10px;
+    }
+    .indicator-container {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .indicator-dot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin: 0 5px;
+      background-color: #ccc;
+      border-radius: 50%;
+      transition: background-color 0.3s;
+    }
+    .indicator-dot.active {
+      background-color: #00695c;
+    }
   </style>
 </head>
 <body>
@@ -163,7 +222,6 @@
 
   <section id="jurusan">
     <h2>🏫 Jurusan & Keunggulan</h2>
-
     <h3>💻 TJKT - Teknik Jaringan Komputer dan Telekomunikasi</h3>
     <ul>
       <li>Instalasi dan konfigurasi jaringan LAN/WAN</li>
@@ -178,82 +236,3 @@
       <li>Membuat laporan keuangan dan jurnal transaksi</li>
       <li>Memahami perpajakan dan audit dasar</li>
     </ul>
-    <p><strong>Prospek kerja:</strong> Staf akuntansi, kasir, pembantu auditor, administrasi keuangan.</p>
-
-    <h3>📁 MPLB - Manajemen Perkantoran dan Layanan Bisnis</h3>
-    <ul>
-      <li>Pengelolaan dokumen dan arsip digital</li>
-      <li>Pelayanan pelanggan dan etika bisnis</li>
-      <li>Penggunaan aplikasi perkantoran modern</li>
-    </ul>
-    <p><strong>Prospek kerja:</strong> Sekretaris, admin kantor, resepsionis, customer service.</p>
-  </section>
-
-  <section id="eskul">
-    <h2>🎉 Ekstrakurikuler</h2>
-    <ul>
-      <li>🕌 Rohis (Rohani Islam)</li>
-      <li>🏐 Volly</li>
-      <li>🖥️ IT Club</li>
-      <li>🇬🇧 English Club</li>
-      <li>⚽ Futsal</li>
-      <li>🏀 Basket</li>
-      <li>🥁 Hadroh</li>
-      <li>🎖️ Paskibra</li>
-      <li>🎸 Band Sekolah</li>
-    </ul>
-  </section>
-
-    <section id="kemitraan">
-    <h2>🤝 Kemitraan Dunia Industri</h2>
-    <ul>
-      <li>🏢 PT Telkom Indonesia – Program PKL dan rekrutmen teknisi jaringan</li>
-      <li>💻 Dinas Kominfo Jakarta – Pelatihan digital dan magang</li>
-      <li>🏦 Bank Syariah Indonesia – Edukasi keuangan dan akuntansi</li>
-      <li>🎓 Universitas Negeri Jakarta – Jalur prestasi untuk alumni</li>
-    </ul>
-  </section>
-
-  <section id="alumni">
-    <h2>🎓 Alumni Kami</h2>
-    <div class="alumni-grid">
-      <div class="alumni-card">
-        <img src="https://via.placeholder.com/200x250?text=Fadlan" alt="Fadlan Ramadhan">
-        <h3>Fadlan Ramadhan</h3>
-        <p>Mahasiswa Teknik Informatika – Universitas Gunadarma</p>
-      </div>
-      <div class="alumni-card">
-        <img src="https://via.placeholder.com/200x250?text=Salsabila" alt="Salsabila Nuraini">
-        <h3>Salsabila Nuraini</h3>
-        <p>Staf Administrasi – PT Astra Honda Motor</p>
-      </div>
-      <div class="alumni-card">
-        <img src="https://via.placeholder.com/200x250?text=Rafi" alt="Rafi Pratama">
-        <h3>Rafi Pratama</h3>
-        <p>Customer Service – Bank Syariah Indonesia</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="prestasi-alumni">
-    <h2>🏆 Prestasi Alumni</h2>
-    <ul>
-      <li>🎖️ Juara 1 Lomba Jaringan Komputer Tingkat Provinsi – Fadlan Ramadhan</li>
-      <li>🎤 Finalis Lomba Public Speaking Nasional – Salsabila Nuraini</li>
-      <li>📊 Juara 2 Kompetisi Akuntansi SMK se-Jakarta – Rafi Pratama</li>
-    </ul>
-  </section>
-
-  <section id="kontak">
-  <h2>📞 Kontak Kami</h2>
-  <p>📧 Email: info@smkmalahayati.sch.id</p>
-  <p>📍 Alamat: Jl. Pendidikan No. 45, Ciracas, Jakarta Timur</p>
-  <p>💬 WhatsApp: <a href="https://wa.me/6212345678?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20pendaftaran%20SMK%20Islam%20Malahayati" target="_blank">Klik untuk chat langsung</a>
-</section>
-
-  <footer>
-    <p>&copy; 2025 SMK Islam Malahayati. Dibuat dengan semangat oleh FAIREL 💚</p>
-  </footer>
-
-</body>
-</html>
