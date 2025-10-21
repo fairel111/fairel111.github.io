@@ -3,15 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Profil Sekolah</title>
+  <title>Profil Sekolah - SMK Islam Malahayati</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
-    body { font-family: 'Inter', sans-serif; margin: 0; background: #fff; padding: 40px; }
-    .back { display: inline-block; margin-bottom: 20px; padding: 10px 20px; background: #00695c; color: white; text-decoration: none; border-radius: 8px; }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #fce4ec, #ffffff);
+      color: #333;
+      padding: 40px;
+    }
+    .back {
+      display: inline-block;
+      margin-bottom: 30px;
+      padding: 10px 20px;
+      background-color: #ad1457;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    h2 {
+      color: #880e4f;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+    .highlight-box {
+      background-color: #f8bbd0;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+    .highlight-box p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .feature-card {
+      background-color: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+      text-align: center;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+    .feature-card h3 {
+      color: #c2185b;
+      margin-bottom: 10px;
+    }
+    .feature-card p {
+      font-size: 15px;
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
+
   <a href="index.html" class="back">← Kembali ke Beranda</a>
-  <h2>📘 Profil Sekolah</h2>
-  <p>SMK Islam Malahayati adalah sekolah kejuruan berbasis Islam yang berfokus pada pembentukan karakter, kompetensi, dan kreativitas siswa.</p>
+
+  <h2>📘 Profil SMK Islam Malahayati</h2>
+
+  <div class="highlight-box">
+    <p><strong>SMK Islam Malahayati</strong> adalah sekolah kejuruan berbasis nilai-nilai Islam yang berkomitmen mencetak lulusan profesional, berakhlak mulia, dan siap bersaing di dunia kerja maupun wirausaha. Kami menggabungkan pendidikan karakter, teknologi, dan kemitraan industri untuk membentuk generasi unggul.</p>
+  </div>
+
+  <div class="features">
+    <div class="feature-card">
+      <h3>🌱 Pendidikan Karakter</h3>
+      <p>Menanamkan nilai-nilai keislaman dalam setiap aspek pembelajaran dan kehidupan sekolah.</p>
+    </div>
+    <div class="feature-card">
+      <h3>💡 Kurikulum Berbasis Industri</h3>
+      <p>Disusun sesuai kebutuhan dunia kerja dengan dukungan teknologi dan praktik langsung.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🤝 Kemitraan Strategis</h3>
+      <p>Bekerja sama dengan perusahaan, kampus, dan lembaga pelatihan untuk penyaluran kerja dan magang.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🎓 Alumni Berkualitas</h3>
+      <p>Lulusan kami telah sukses di berbagai bidang, baik sebagai profesional maupun wirausahawan.</p>
+    </div>
+  </div>
+
 </body>
 </html>
