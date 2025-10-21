@@ -1,239 +1,37 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SMK Islam Malahayati</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beranda - SMK Islam Malahayati</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #e0f7fa, #ffffff);
-      color: #333;
-      animation: fadeIn 1s ease-in;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    header {
-      background-color: #00695c;
-      color: white;
-      padding: 30px 40px;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    header img {
-      width: 100px;
-      margin-bottom: 10px;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      background-color: #004d40;
-      margin: 0;
-    }
-    nav ul li {
-      margin: 0 15px;
-    }
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      padding: 15px;
-      display: block;
-      transition: background 0.3s;
-    }
-    nav ul li a:hover {
-      background-color: #00796b;
-      border-radius: 5px;
-    }
-    section {
-      padding: 40px;
-      max-width: 1000px;
-      margin: auto;
-      background-color: white;
-      margin-top: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    h2 {
-      color: #00695c;
-      margin-bottom: 10px;
-    }
-    h3 {
-      color: #00796b;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    li::marker {
-      color: #00695c;
-    }
-    .highlight {
-      background-color: #e0f2f1;
-      padding: 5px 10px;
-      border-radius: 5px;
-      display: inline-block;
-      margin: 5px 0;
-    }
-    footer {
-      background-color: #00695c;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-    .welcome {
-      text-align: center;
-      padding: 30px;
-      background-color: #e0f2f1;
-    }
-    .welcome a {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background-color: #00695c;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .alumni-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-    .alumni-card {
-      width: 200px;
-      text-align: center;
-    }
-    .alumni-card img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    /* Scrollable section styles */
-    .scrollable-wrapper {
-      position: relative;
-      margin: 40px 0;
-    }
-    .scrollable-sections {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      gap: 20px;
-      padding: 20px;
-      scroll-padding: 20px;
-      scroll-behavior: smooth;
-    }
-    .scrollable-sections section {
-      flex: 0 0 90%;
-      scroll-snap-align: start;
-      min-width: 300px;
-      transition: transform 0.3s ease;
-    }
-    .scroll-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: #00695c;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      cursor: pointer;
-      font-size: 20px;
-      border-radius: 50%;
-      z-index: 1;
-    }
-    .scroll-btn:hover {
-      background-color: #00796b;
-    }
-    .scroll-left {
-      left: 10px;
-    }
-    .scroll-right {
-      right: 10px;
-    }
-    .indicator-container {
-      text-align: center;
-      margin-top: 10px;
-    }
-    .indicator-dot {
-      display: inline-block;
-      width: 12px;
-      height: 12px;
-      margin: 0 5px;
-      background-color: #ccc;
-      border-radius: 50%;
-      transition: background-color 0.3s;
-    }
-    .indicator-dot.active {
-      background-color: #00695c;
-    }
+    body { font-family: 'Inter', sans-serif; margin: 0; background: #f5f7fa; }
+    header, footer { background: #004d40; color: white; text-align: center; padding: 20px; }
+    nav { text-align: center; margin: 20px 0; }
+    nav a { margin: 0 15px; text-decoration: none; color: #00695c; font-weight: 600; }
   </style>
 </head>
 <body>
-  
-
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/SMK_Islam_Malahayati_Logo.png/200px-SMK_Islam_Malahayati_Logo.png" alt="Logo SMK Islam Malahayati">
-    <h1>🌟 SMK Islam Malahayati 🌟</h1>
-    <p>Tempatnya Generasi Hebat Berkembang dengan Ilmu dan Akhlak</p>
+    <h1>SMK Islam Malahayati</h1>
+    <p>Ilmu, Akhlak, dan Masa Depan Cerah</p>
   </header>
 
-  <section class="welcome">
-    <h2>👋 Selamat Datang di Situs Resmi</h2>
-    <p>Masuk ke situs web ini untuk mengenal lebih dekat SMK Islam Malahayati — tempat generasi hebat tumbuh dengan ilmu dan akhlak.</p>
-    <a href="#profil">Lanjutkan</a>
-  </section>
-
   <nav>
-    <ul>
-      <li><a href="profil.html">Profil</a></li>
-      <li><a href="visi.html">Visi & Misi</a></li>
-      <li><a href="jurusan.html">Jurusan</a></li>
-      <li><a href="eskul.html">Ekstrakurikuler</a></li>
-      <li><a href="kemitraan.html">Kemitraan</a></li>
-      <li><a href="alumni.html>Alumni</a></li>
-      <li><a href="prestasi-alumni.html">Prestasi</a></li>
-      <li><a href="kontak.html">Kontak</a></li>
-    </ul>
+    <a href="profil.html">Profil</a>
+    <a href="jurusan.html">Jurusan</a>
+    <a href="prestasi.html">Prestasi</a>
+    <a href="kontak.html">Kontak</a>
   </nav>
 
-  <section id="profil">
-    <h2>📘 Profil Sekolah</h2>
-    <p>SMK Islam Malahayati adalah <span class="highlight">sekolah kejuruan berbasis Islam</span> yang berfokus pada pembentukan karakter, kompetensi, dan kreativitas siswa. Kami hadir untuk mencetak lulusan yang <strong>profesional, berakhlak, dan siap kerja</strong>.</p>
+  <section style="text-align:center; padding:40px;">
+    <h2>Selamat Datang</h2>
+    <p>Website resmi SMK Islam Malahayati. Jelajahi informasi sekolah kami melalui menu di atas.</p>
   </section>
 
-  <section id="visi">
-    <h2>🎯 Visi & Misi</h2>
-    <h3>Visi</h3>
-    <p><em>Menjadi SMK Islam unggulan yang menghasilkan lulusan berakhlak mulia, kompeten, dan siap bersaing di dunia kerja serta berwirausaha.</em></p>
-    <h3>Misi</h3>
-    <ul>
-      <li>🌱 Menanamkan nilai-nilai keislaman dalam setiap aspek pembelajaran.</li>
-      <li>💡 Meningkatkan kualitas pendidikan berbasis teknologi dan bisnis.</li>
-      <li>🚀 Menyiapkan peserta didik menjadi tenaga kerja profesional dan mandiri.</li>
-      <li>🤝 Menjalin kemitraan dengan dunia industri dan perguruan tinggi.</li>
-    </ul>
-  </section>
-
-  <section id="jurusan">
-    <h2>🏫 Jurusan & Keunggulan</h2>
-    <h3>💻 TJKT - Teknik Jaringan Komputer dan Telekomunikasi</h3>
-    <ul>
-      <li>Instalasi dan konfigurasi jaringan LAN/WAN</li>
-      <li>Keamanan jaringan dan troubleshooting</li>
-      <li>Dasar pemrograman dan sistem operasi jaringan</li>
-    </ul>
-    <p><strong>Prospek kerja:</strong> Teknisi jaringan, IT support, network administrator, teknisi ISP.</p>
-
-    <h3>📊 AKL - Akuntansi dan Keuangan Lembaga</h3>
-    <ul>
-      <li>Menggunakan software akuntansi seperti MYOB dan Accurate</li>
-      <li>Membuat laporan keuangan dan jurnal transaksi</li>
-      <li>Memahami perpajakan dan audit dasar</li>
-    </ul>
+  <footer>
+    <p>&copy; 2025 SMK Islam Malahayati</p>
+  </footer>
+</body>
+</html>
