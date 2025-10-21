@@ -11,6 +11,7 @@
       font-family: 'Inter', sans-serif;
       background: linear-gradient(to right, #e0f7fa, #ffffff);
       color: #333;
+      scroll-behavior: smooth;
     }
     .marquee {
       background-color: #00695c;
@@ -32,7 +33,7 @@
     }
     header {
       text-align: center;
-      padding: 40px 20px;
+      padding: 60px 20px;
     }
     header h1 {
       color: #004d40;
@@ -60,22 +61,36 @@
       background-color: #e0f2f1;
     }
     section {
-      text-align: center;
       padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: #00695c;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 600;
-      transition: background 0.3s;
+    h2 {
+      color: #00695c;
+      margin-bottom: 20px;
     }
-    .btn:hover {
-      background-color: #004d40;
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      color: #00796b;
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: 15px;
+      line-height: 1.6;
     }
     footer {
       background-color: #004d40;
@@ -106,9 +121,29 @@
   </nav>
 
   <section>
-    <h2>Selamat Datang di Website Resmi</h2>
-    <p>SMK Islam Malahayati hadir untuk membentuk generasi unggul yang siap kerja, berakhlak, dan berdaya saing global.</p>
-    <a href="profil.html" class="btn">Lihat Profil Sekolah</a>
+    <h2>🔍 Ringkasan Sekolah</h2>
+    <div class="summary">
+      <div class="card">
+        <h3>📘 Profil</h3>
+        <p>SMK Islam Malahayati adalah sekolah kejuruan berbasis Islam yang membentuk generasi profesional dan berakhlak.</p>
+      </div>
+      <div class="card">
+        <h3>🏫 Jurusan</h3>
+        <p>TJKT, AKL, dan MPLB — jurusan unggulan yang siap menghadirkan lulusan kompeten dan siap kerja.</p>
+      </div>
+      <div class="card">
+        <h3>🏆 Prestasi</h3>
+        <p>Alumni kami telah meraih penghargaan nasional, magang internasional, dan sukses berwirausaha.</p>
+      </div>
+      <div class="card">
+        <h3>🎭 Ekstrakurikuler</h3>
+        <p>Futsal, Tari, Hadroh, PMR, Voli, Basket, Paskibra, IT Club, English Club, dan ROHIS.</p>
+      </div>
+      <div class="card">
+        <h3>📞 Kontak</h3>
+        <p>Jl. Pendidikan No.123, Jakarta Timur | info@smkmalahayati.sch.id | (021) 12345678</p>
+      </div>
+    </div>
   </section>
 
   <footer>
